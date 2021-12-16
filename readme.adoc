@@ -1,1 +1,12 @@
 = Dockerfile for PlantUML
+Providing a docker container with Alpine Linux, Java and PlantUML.
+
+PlantUML generates diagrams by using a Domain-Specific Language.
+
+== Usage
+Create a `plantuml` folder first and save all the diagrams there.
+
+[source,bash]
+----
+docker run -v ${PWD}/plantuml:/plantuml --rm -i codecentric/plantuml-docker:1.2021.16 -w /plantuml -o ./output
+----
