@@ -2,7 +2,7 @@ FROM docker.io/alpine:3
 LABEL maintainer="Daniel Kocot <daniel.kocot@codecentric.de>" \
       description="Internal Docker image for PlantUML"
 
-ENV PLANTUML_VERSION 1.2021.16
+ENV PLANTUML_VERSION 1.2022.2
 
 RUN apk update
 RUN apk add --no-cache graphviz openjdk8-jre curl ttf-droid
